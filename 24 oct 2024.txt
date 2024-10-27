@@ -1,0 +1,677 @@
+Ques:1 hello world no return and no argument 
+Ans:
+#include<stdio.h>
+void hello();
+int main(){
+    hello();
+    hello();
+    return 0;
+}
+void hello(){
+    printf("Hello World\n");
+}
+
+-------------------------------------------------------------------------------------------------------------
+Ques:2
+add()
+sub()
+multi()
+div()
+Ans:
+#include<stdio.h>
+void add();
+void sub();
+void multi();
+void div();
+int main(){
+    add();
+    sub();
+    multi();
+    div();
+    return 0;
+}
+void add(){
+    int a,b,c;
+    printf("Enter the value of a and b:");
+    scanf("%d %d",&a,&b);
+    c=a+b;
+    printf("The sum is: %d\n",c);
+}
+void sub(){
+    int a,b,c;
+    printf("Enter the value of a and b:");
+    scanf("%d %d",&a,&b);
+    c=a-b;
+    printf("The subtraction is:%d\n",c);
+}
+void multi(){
+    int a,b,c;
+    printf("Enter the value of a and b:");
+    scanf("%d %d",&a,&b);
+    c=a*b;
+    printf("The multiplication is:%d\n",c);
+}
+void div(){
+    int a,b,c;
+    printf("Enter the value of a and b:");
+    scanf("%d %d",&a,&b);
+    c=a/b;
+    printf("The division is: %d",c);
+}
+Output:
+Enter the value of a and b:6
+12
+The sum is: 18
+Enter the value of a and b:26
+14
+The subtraction is:12
+Enter the value of a and b:12
+5
+The multiplication is:60
+Enter the value of a and b:56
+4
+The division is: 14
+---------------------------------------------------------------------------------------------------------------
+Ques:3
+even()
+voter()
+marksheet()
+electricity()
+max() :three number maximum 
+Ans:
+#include<stdio.h>
+void even();
+void voter();
+void marksheet();
+void electricity();
+void max();
+int main(){
+    even();
+    voter();
+    marksheet();
+    electricity();
+    max();
+    return 0;
+}
+void even(){
+    int num;
+    printf("Enter the value of num:");
+    scanf("%d",&num);
+    if(num%2==0){
+        printf("Number is even\n");
+    }
+    else{
+        printf("Number is odd\n");
+    }
+}
+void voter(){
+    int age;
+    printf("Enter the age:");
+    scanf("%d",&age);
+    if(age>=18){
+        printf("Valid for voter id\n");
+    }
+    else
+    printf("Not valid for voter id\n");
+}
+void marksheet(){
+    int ph,ch,ca;
+    printf("Enter the marks of physics,chemistry and computer applications:");
+    scanf("%d %d %d",&ph,&ch,&ca);
+    int total;
+    float per;
+    total=ph+ch+ca;
+    per=total/3.0;
+    if(per>=80){
+        printf("First division with %f\n",per);
+    }
+    else if(per>=60 && per<80){
+        printf("Second division with %f\n",per);
+    }
+    else if(per>=33 && per<60){
+        printf("Third division with %f",per);
+    }
+    else{
+        printf("Fail\n");
+    }
+}
+void electricity(){
+    int unit;
+    printf("Enter units:");
+    scanf("%d",&unit);
+    float amount;
+    amount=unit*10;
+    if(unit>=1 && unit<=10){
+        amount=amount-((amount*10)/100);
+        printf("The amount of electricity bill is:%f\n",amount);
+    }
+    else if(unit>=11 && unit<=20){
+        amount=amount-((amount*20)/100);
+        printf("The amount of electricity bill is:%f\n",amount);
+    }
+    else if(unit>=21 && unit<=40){
+        amount=amount-((amount*30)/100);
+        printf("The amount of electricity bill is:%f\n",amount);
+    }
+    else if(unit>=40 && unit<=100){
+        amount=amount-((amount*40)/100);
+        printf("The amount of electricity bill is:%f\n",amount);
+    }
+    else{
+        amount=amount-((amount*50)/100);
+        printf("The amount of electricity bill is:%f\n",amount);
+    }
+}
+void max(){
+    int a,b,c;
+    printf("Enter the value of a,b and c:");
+    scanf("%d %d %d",&a,&b,&c);
+    if(a>b && a>c){
+        printf("a is greater");
+    }
+    else if(b>a && b>c){
+        printf("b is greater");
+    }
+    else{
+        printf("c is greater");
+    }
+}
+Output:
+Enter the value of num:14
+Number is even
+Enter the age:24
+Valid for voter id
+Enter the marks of physics,chemistry and computer applications:98
+65
+84
+First division with 82.333336
+Enter units:45
+The amount of electricity bill is:270.000000
+Enter the value of a, b and c:123
+2 
+56
+c is greater
+--------------------------------------------------------------------------------------------------------------
+Ques:4
+a :
+	Armstrong() 
+
+p :
+	palindrome()
+
+f :
+	factorial()
+
+b :
+	Fibonacci() 
+
+c :
+	count of digit of number 
+
+s :
+	sum of digit 
+
+r :
+	reverse number 
+Ans:
+#include<stdio.h>
+void armstrong();
+void palindrome();
+void factorial();
+void Fibonacci();
+void count();
+void sum();
+void reverse();
+int main(){
+    char a;
+    printf("Enter any single character:");
+    scanf("%c",&a);
+    if(a=='a'){
+        armstrong();
+    }
+    else if(a=='p'){
+        palindrome();
+    }
+    else if(a=='f'){
+        factorial();
+    }
+    else if(a=='b'){
+        Fibonacci();
+    }
+    else if(a=='c'){
+        count();
+    }
+    else if(a=='s'){
+        sum();
+    }
+    else if(a=='r'){
+        reverse();
+    }
+    else{
+        printf("Input is not matched");
+    }
+    return 0;
+}
+void armstrong(){
+    int num;
+    printf("Enter the value of num:");
+    scanf("%d",&num);
+    int temp=num;
+    int rem,sum=0;
+    while(num>0){
+        rem=num%10;
+        sum=sum+rem*rem*rem;
+        num=num/10;
+    }
+    if(temp==sum){
+        printf("Armstrong number\n");
+    }
+    else{
+        printf("Not armstrong\n");
+    }
+}
+void palindrome(){
+    int num;
+    printf("Enter the value of num");
+    scanf("%d",&num);
+    int temp=num;
+    int rem,sum=0;
+    while(num>0){
+        rem=num%10;
+        sum=sum*10+rem;
+        num=num/10;
+    }
+    if(temp==sum){
+        printf("Palindrome\n");
+    }
+    else{
+        printf("Not palindrome\n");
+    }
+}
+void factorial(){
+    int num,i=1;
+    int fact=1;
+    printf("Enter the value of num:");
+    scanf("%d",&num);
+    while(i<=num){
+        fact=fact*i;
+        i++;
+    }
+    printf("The factorial of a number is:%d\n",fact);
+}
+void fibonacci(){
+    int n1=0,n2=1,n3;
+    int n;
+    printf("Enter the value of n:");
+    scanf("%d",&n);
+    printf("%d %d ",n1,n2);
+    for(int i=1;i<=n;i++){
+        n3=n1+n2;
+        printf("%d ",n3);
+        n1=n2;
+        n2=n3;
+    }
+}
+void count(){
+    int num;
+    int count=0;
+    printf("Enter the value of num:");
+    scanf("%d",&num);
+    while(num>0){
+        count++;
+        num=num/10;
+    }
+    printf("%d\n",count);
+}
+void sum(){
+    int i=1,a,sum=0;
+    printf("Enter the value of a:");
+    scanf("%d",&a);
+    while(i<=a){
+        sum=sum+i;
+        i++;
+    }
+    printf("%d",sum);
+}
+void reverse(){
+    int num;
+    printf("Enter the value of num:");
+    scanf("%d",&num);
+    int temp=num;
+    int rem,sum=0;
+    while(num>0){
+        rem=num%10;
+        sum=sum*10+rem;
+        num=num/10;
+    }
+    printf("%d",sum);
+}
+==============================================================================================================
+no return and argument 
+--------------------------------------------------------------------------------------------------------------
+Ques:5
+add()
+sub()
+multi()
+div()
+Ans:
+#include<stdio.h>
+void add(int a,int b);
+void sub(int a,int b);
+void mul(int a,int b);
+void divide(int a,int b);
+int main(){
+    int a,b;
+    printf("Enter the value of a and b:");
+    scanf("%d%d",&a,&b);
+    add(a,b);
+    sub(a,b);
+    mul(a,b);
+    divide(a,b);
+    return 0;
+}
+void add(int a,int b){
+    int c=a+b;
+    printf("The sum is:%d\n",c);
+}
+void sub(int a,int b){
+    int c=a-b;
+    printf("The subtraction is:%d\n",c);
+}
+void mul(int a,int b){
+    int c=a*b;
+    printf("The multiplication is:%d\n",c);
+}
+void divide(int a,int b){
+    int c=a/b;
+    printf("The division is:%d\n",c);
+}
+Output:
+Enter the value of a and b:45
+5
+The sum is:50
+The subtraction is:40
+The multiplication is:225
+The division is:9
+--------------------------------------------------------------------------------------------------------------
+Ques:6 
+even()
+voter()
+marksheet()
+electricity()
+max() :three number maximum 
+Ans:
+#include<stdio.h>
+void even(int num);
+void voter(int age);
+void marksheet(float per);
+void electricity(float amount);
+void max(int a,int b,int c);
+int main(){
+    int num;
+    printf("Enter the value of num:");
+    scanf("%d",&num);
+    even(num);
+    int age;
+    printf("Enter the age:");
+    scanf("%d",&age);
+    voter(age);
+    int ph,ch,ca;
+    printf("Enter the marks of physics,chemistry and computer applications:");
+    scanf("%d %d %d",&ph,&ch,&ca);
+    float per;
+    per=(ph+ch+ca)/3.0;
+    marksheet(per);
+    int unit;
+    printf("Enter units:");
+    scanf("%d",&unit);
+    float amount;
+    amount=unit*10;
+    electricity(amount);
+    int a,b,c;
+    printf("Enter the value of a,b and c:");
+    scanf("%d %d %d",&a,&b,&c);
+    max(a,b,c);
+    return 0;
+}
+void even(int num){
+    if(num%2==0){
+        printf("Even number\n");
+    }
+    else{
+        printf("Odd number\n");
+    }
+}
+void voter(int age){
+    if(age>=18){
+        printf("Valid for voter id\n");
+    }
+    else{
+        printf("Not valid for voter id\n");
+    }
+}
+void marksheet(float per){
+    if(per>=80){
+        printf("First division with %f\n",per);
+    }
+    else if(per>=60 && per<80){
+        printf("Second division with %f\n",per);
+    }
+    else if(per>=33 && per<60){
+        printf("Third division with %f\n",per);
+    }
+    else{
+        printf("Fail\n");
+    }
+
+}
+void electricity(float amount){
+    int unit;
+    printf("Enter units:");
+    scanf("%d",&unit);
+    if(unit>=1 && unit<=10){
+        amount=amount-((amount*10)/100);
+        printf("The amount of electricity bill is:%f\n",amount);
+    }
+    else if(unit>=11 && unit<=20){
+        amount=amount-((amount*20)/100);
+        printf("The amount of electricity bill is:%f\n",amount);
+    }
+    else if(unit>=21 && unit<=40){
+        amount=amount-((amount*30)/100);
+        printf("The amount of electricity bill is:%f\n",amount);
+    }
+    else if(unit>=40 && unit<=100){
+        amount=amount-((amount*40)/100);
+        printf("The amount of electricity bill is:%f\n",amount);
+    }
+    else{
+        amount=amount-((amount*50)/100);
+        printf("The amount of electricity bill is:%f\n",amount);
+    }
+}
+void max(int a,int b,int c){
+    if(a>b && a>c){
+        printf("a is greater");
+    }
+    else if(b>a && b>c){
+        printf("b is greater");
+    }
+    else{
+        printf("c is greater");
+    }
+}
+Output:
+Enter the value of num:65
+Odd number
+Enter the age:24
+Valid for voter id
+Enter the marks of physics,chemistry and computer applications:98 87 29
+Second division with 71.333336
+Enter units:41
+Enter units:41
+The amount of electricity bill is:246.000000
+Enter the value of a,b and c:12 52 85
+c is greater
+-------------------------------------
+Ques:7
+a :
+	Armstrong() 
+
+p :
+	palindrome()
+
+f :
+	factorial()
+
+b :
+	Fibonacci() 
+
+c :
+	count of digit of number 
+
+s :
+	sum of digit 
+
+r :
+	reverse number 
+Ans:
+#include<stdio.h>
+void armstrong(int num);
+void palindrome(int num);
+void factorial(int num);
+void Fibonacci(int n);
+void count(int num);
+void sum(int a);
+void reverse(int num);
+int main(){
+    char a;
+    printf("Enter any single character:");
+    scanf("%c",&a);
+    if(a=='a'){
+        int num;
+        printf("Enter the value of num:");
+        scanf("%d",&num);
+        armstrong(num);
+    }
+    else if(a=='p'){
+        int num;
+        printf("Enter the value of num:");
+        scanf("%d",&num);
+        palindrome(num);
+    }
+    else if(a=='f'){
+        int num;
+        printf("Enter the value of num:");
+        scanf("%d",&num);
+        factorial(num);
+    }
+    else if(a=='b'){
+         int n;
+         printf("Enter the value of n:");
+         scanf("%d",&n);
+         Fibonacci(n);
+    else if(a=='c'){
+        int num;
+        printf("Enter the value of num:");
+        scanf("%d",&num);
+        count(num);
+    }
+    else if(a=='s'){
+        int num;
+        printf("Enter the value of num:");
+        scanf("%d",&num);
+        sum(a);
+    }
+    else if(a=='r'){
+        int num;
+        printf("Enter the value of num:");
+        scanf("%d",&num);
+        reverse(num);
+    }
+    else{
+        printf("Input is not matched");
+    }
+    return 0;
+}
+void armstrong(int num){
+    int temp=num;
+    int rem,sum=0;
+    while(num>0){
+        rem=num%10;
+        sum=sum+rem*rem*rem;
+        num=num/10;
+    }
+    if(temp==sum){
+        printf("Armstrong number\n");
+    }
+    else{
+        printf("Not armstrong\n");
+    }
+}
+void palindrome(int num){
+    int temp=num;
+    int rem,sum=0;
+    while(num>0){
+        rem=num%10;
+        sum=sum*10+rem;
+        num=num/10;
+    }
+    if(temp==sum){
+        printf("Palindrome\n");
+    }
+    else{
+        printf("Not palindrome\n");
+    }
+}
+void factorial(int num){
+    int i=1;
+    int fact=1;
+    while(i<=num){
+        fact=fact*i;
+        i++;
+    }
+    printf("The factorial of a number is:%d\n",fact);
+}
+void fibonacci(int n){
+    int n1=0,n2=1,n3;
+    printf("%d %d ",n1,n2);
+    for(int i=1;i<=n;i++){
+        n3=n1+n2;
+        printf("%d ",n3);
+        n1=n2;
+        n2=n3;
+    }
+}
+void count(int num){
+    int count=0;
+    while(num>0){
+        count++;
+        num=num/10;
+    }
+    printf("%d\n",count);
+}
+void sum(int a){
+    int i=1,sum=0;
+    while(i<=a){
+        sum=sum+i;
+        i++;
+    }
+    printf("%d",sum);
+}
+void reverse(int num){
+    int temp=num;
+    int rem,sum=0;
+    while(num>0){
+        rem=num%10;
+        sum=sum*10+rem;
+        num=num/10;
+    }
+    printf("%d",sum);
+}
+Output:
+Enter any single character:f
+Enter the value of num:6
+The factorial of a number is:720
+--------------------------------------------------------------------------------------------------------------
+
