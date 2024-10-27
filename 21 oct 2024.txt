@@ -1,0 +1,297 @@
+Ques:1 even number :
+1--->10 dry run 
+Ans:
+#include<stdio.h>
+int main(){
+    int i=1;
+    while(i<=10){
+        if(i%2==0){
+            printf("%d ",i);
+        }
+        i++;
+    }
+    return 0;
+}
+Output:
+2 4 6 8 10 
+---------------------------------------------------------------------------------------------------
+Ques:2 23-->89 even number 
+Ans:
+#include<stdio.h>
+int main(){
+    int i=23;
+    while(i<=89){
+        if(i%2==0){
+            printf("%d ",i);
+        }
+        i++;
+    }
+    return 0;
+}
+Output:
+24 26 28 30 32 34 36 38 40 42 44 46 48 50 52 54 56 58 60 62 64 66 68 70 72 74 76 78 80 82 84 86 88
+------------------------------------------------------------------------------------------------------
+Ques:3 65-->34 even number
+Ans:
+#include<stdio.h>
+int main(){
+    int i=65;
+    while(i>=34){
+        if(i%2==0){
+            printf("%d ",i);
+        }
+        i--;
+    }
+    return 0;
+}
+Output:
+64 62 60 58 56 54 52 50 48 46 44 42 40 38 36 34  
+
+------------------------------------------------------------------------------------------------------
+Ques:4 100 --- 1 even number 
+Ans:
+#include<stdio.h>
+int main(){
+    int i=100;
+    while(i>=1){
+        if(i%2==0){
+            printf("%d ",i);
+        }
+        i--;
+    }
+    return 0;
+}
+Output:
+100 98 96 94 92 90 88 86 84 82 80 78 76 74 72 70 68 66 64 62 60 58 56 54 52 50 48 46 44 42 40 38 36 34 32 30 28 26 24 22 20 18 16 14 12 10 8 6 4 2 
+
+=======================================================================================================
+odd number :
+Ques:5==> 1--->10 dry run 
+Ans:
+#include<stdio.h>
+int main(){
+    int i=1;
+    while(i<=10){
+        if(i%2!=0){
+            printf("%d ",i);
+        }
+        i++;
+    }
+    return 0;
+}
+Output:
+1 3 5 7 9 
+---------------------------------------------------------------------------------------------------
+Ques:6==> 23-->89 odd number 
+Ans:
+#include<stdio.h>
+int main(){
+    int i=23;
+    while(i<=89){
+        if(i%2!=0){
+            printf("%d ",i);
+        }
+        i++;
+    }
+    return 0;
+}
+Output:
+23 25 27 29 31 33 35 37 39 41 43 45 47 49 51 53 55 57 59 61 63 65 67 69 71 73 75 77 79 81 83 85 87 89 
+
+-----------------------------------------------------------------------------------------------------
+Ques:7==> 65-->34 odd number 
+Ans:
+#include<stdio.h>
+int main(){
+    int i=65;
+    while(i>=34){
+        if(i%2!=0){
+            printf("%d ",i);
+        }
+        i--;
+    }
+    return 0;
+}
+Output:
+65 63 61 59 57 55 53 51 49 47 45 43 41 39 37 35
+
+------------------------------------------------------------------------------------------------------
+Ques:8==> 100 --- 1 odd number 
+Ans:
+#include<stdio.h>
+int main(){
+    int i=100;
+    while(i>=1){
+        if(i%2!=0){
+            printf("%d ",i);
+        }
+        i--;
+    }
+    return 0;
+}
+Output:
+99 97 95 93 91 89 87 85 83 81 79 77 75 73 71 69 67 65 63 61 59 57 55 53 51 49 47 45 43 41 39 37 35 33 31 29 27 25 23 21 19 17 15 13 11 9 7 5 3 1
+
+----------------------------------------------------------------------------------------------------
+Ques:9==> sum of n numbers :
+1--->10 dry run 
+Ans:
+#include<stdio.h>
+int main(){
+    int sum=0;
+    int i=1;
+    while(i<=10){
+        sum=sum+i;
+        i++;
+    }
+    printf("%d",sum);
+    return 0;
+}
+Output:
+55
+
+-----------------------------------------------------------------------------------------------------
+Ques:10==> 1--->10 even number ka sum dry run 
+Ans:
+#include<stdio.h>
+int main(){
+    int sum=0;
+    int i=1;
+    while(i<=10){
+        if(i%2==0){
+           sum=sum+i;
+        }
+        i++;
+    }
+    printf("%d",sum);
+    return 0;
+}
+Output:
+30
+
+----------------------------------------------------------------------------------------------------
+Ques:11==> 1---->100 odd number ka sum
+Ans:
+#include<stdio.h>
+int main(){
+    int sum=0;
+    int i=1;
+    while(i<=100){
+        if(i%2!=0){
+           sum=sum+i;
+        }
+        i++;
+    }
+    printf("%d",sum);
+    return 0;
+}
+Output:
+2500
+
+------------------------------------------------------------------------------------------------------
+Ques:12==> 43552 : count dry run 
+Ans:
+#include<stdio.h>
+int main(){
+    //43552
+    int num=43552;
+    int count=0;
+    while(num>0){
+        count++;
+        num=num/10;
+    }
+    printf("%d",count);
+    return 0;
+}
+Output:
+5
+-----------------------------------------------------------------------------------------------------
+Ques:13==> reverse number of digit :24346 
+dry run 
+Ans:
+#include<stdio.h>
+int main(){
+    int num=24346;
+    int rem,sum=0;
+    while(num>0){
+        rem=num%10;
+        sum=sum*10+rem;
+        num=num/10;
+    }
+    printf("%d",sum);
+    return 0;
+}
+Output:
+64342
+------------------------------------------------------------------------------------------------------
+Ques:14==> palindrome number dry run
+123454321
+Ans:
+#include<stdio.h>
+int main(){
+    int num=123454321;
+    int temp=num;
+    int rem,sum=0;
+    while(num>0){
+        rem=num%10;
+        sum=sum*10+rem;
+        num=num/10;
+    }
+    printf("%d\n",sum);
+    if(sum==temp){
+        printf("pallindrome");
+    }
+    else{
+        printf("not pallindrome");
+    }
+    return 0;
+}
+Output:
+123454321
+pallindrome
+-----------------------------------------------------------------------------------------------------
+Ques:15==> Armstrong number :153,156
+Ans:
+#include<stdio.h>
+int main(){
+    int num=153;
+    int temp=num;
+    int rem,sum=0;
+    while(num>0){
+        rem=num%10;
+        sum=sum+rem*rem*rem;
+        num=num/10;
+    }
+    if(sum==temp){
+        printf("armstrong");
+    }
+    else{
+        printf("not");
+    }
+    return 0;
+}
+Output:
+armstrong
+
+-------------------------------------------------------
+#include<stdio.h>
+int main(){
+    int num=156;
+    int temp=num;
+    int rem,sum=0;
+    while(num>0){
+        rem=num%10;
+        sum=sum+rem*rem*rem;
+        num=num/10;
+    }
+    if(sum==temp){
+        printf("armstrong");
+    }
+    else{
+        printf("not");
+    }
+    return 0;
+}
+Output:
+not
+-----------------------------------------------------------------------------------------------------
