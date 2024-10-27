@@ -1,0 +1,24 @@
+Ques:1 Print hello world?
+Ans:#include<stdio.h>
+int main() {
+    printf("hello world");
+    return 0;
+}
+---------------------------------------------------------------------------------
+Ques:2 What is c?
+Ans: C is a programming language, mother language, structural language, procedural language.
+-> Structural language:
+                     means particular and fixed structure 
+-> Procedural language:
+                     Solve a problem step by step
+-------------------------------------------------------------------------------------
+Ques:3 What is features of C?
+Ans: 1.Simple
+     2.Portable
+     3.Procedural language
+     4.Machine dependent
+     5.Structural language
+--------------------------------------------------------------------------------------
+Ques:4 What is structural language?
+Ans: Structural language means it have particular and fixed structure
+--------------------------------------------------------------------------------------
