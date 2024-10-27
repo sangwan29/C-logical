@@ -1,0 +1,160 @@
+Ques:1 Five friends name same line 
+Ans:
+#include <stdio.h>
+int main() {
+    printf("Divya");
+    printf("Meghna");
+    printf("Kashii");
+    printf("Shivam");
+    printf("Rekha");
+    return 0;
+}
+
+Output:
+DivyaMeghnaKashiiShivamRekha
+----------------------------------------------------------------------------------------------
+Ques:2 five country name new line 
+Ans: 
+#include <stdio.h>
+int main() {
+    printf("India\n");
+    printf("Australia\n");
+    printf("China\n");
+    printf("Russia\n");
+    printf("Pakistan");
+    return 0;
+}
+
+Output:
+India
+Australia
+China
+Russia
+Pakistan
+----------------------------------------------------------------------------------------------
+Ques:3 Print 56?
+Ans:
+#include <stdio.h>
+int main() {
+    int num=56;
+    printf("%d",num);
+    return 0;
+}
+
+Output:
+56
+----------------------------------------------------------------------------------------------
+Ques:4 Print -5.67? 
+Ans:
+#include <stdio.h>
+int main() {
+    float num=-5.67;
+    printf("%f",num);
+    return 0;
+}
+
+Output:
+-5.670000
+----------------------------------------------------------------------------------------------
+Ques:5 Print y?
+Ans:
+#include <stdio.h>
+int main() {
+    char name='y';
+    printf("%c",name);
+    return 0;
+}
+
+Output:
+y
+---------------------------------------------------------------------------------------------
+Ques:6 print 
+67
+-3.56
+y 
+-9
+4.2
+t 
+Ans: 
+#include <stdio.h>
+int main() {
+    int num=67;
+    printf("%d\n",num);
+    float number=-3.56;
+    printf("%f\n",number);
+    char name='y';
+    printf("%c\n",name);
+    int a=-9;
+    printf("%d\n",a);
+    float n=4.2;
+    printf("%f\n",n);
+    char b='t';
+    printf("%c",b);
+    return 0;
+}
+
+Output:
+67
+-3.560000
+y
+-9
+4.200000
+t
+------------------------------------------------------------------------------------
+Ques:7 45+7
+Ans:
+#include <stdio.h>
+int main() {
+    int a=45;
+    int b=7;
+    int c=a+b;
+    printf("%d",c);
+    return 0;
+}
+
+output:
+52
+----------------------------------------------------------------------------------
+Ques:8 234-55
+Ans:
+#include <stdio.h>
+int main() {
+    int a=234;
+    int b=55;
+    int c=a-b;
+    printf("%d",c);
+    return 0;
+}
+
+Output:
+179
+---------------------------------------------------------------------------------------
+Ques:9 56*4
+Ans:
+#include <stdio.h>
+int main() {
+    int a=56;
+    int b=4;
+    int c=a*b;
+    printf("%d",c);
+    return 0;
+}
+
+Output:
+224
+---------------------------------------------------------------------------------------
+Ques:10 22/2
+Ans:
+#include <stdio.h>
+int main() {
+    int a=22;
+    int b=2;
+    int c=a/b;
+    printf("%d",c);
+    return 0;
+}
+
+Output: 11
+----------------------------------------------------------------------------------------
+
+
