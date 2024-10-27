@@ -1,0 +1,628 @@
+Ques:1 Print 56 with user input
+Ans:
+#include <stdio.h>
+int main() {
+    int num;
+    printf("Enter a number:");
+    scanf("%d",&num);
+    printf("%d",num);
+    return 0;
+}
+
+Output:
+Enter a number:56
+56
+-------------------------------------------------------------------------------------------------
+Ques:2 Print -5.67 with user input
+Ans:
+#include <stdio.h>
+int main() {
+    float num;
+    printf("Enter a number:");
+    scanf("%f",&num);
+    printf("%f",num);
+    return 0;
+}
+
+Output:
+Enter a number:-5.67
+-5.670000
+-----------------------------------------------------------------------------------------------------
+Ques:3 print y with user input
+Ans:
+#include <stdio.h>
+int main() {
+    char name;
+    printf("Enter a character:");
+    scanf("%c",&name);
+    printf(" %c",name);
+    return 0;
+}
+
+Output:
+Enter a character:y
+ y
+--------------------------------------------------------------------------------------------------------
+Ques:4 print
+67
+-3.56
+y 
+-9
+4.2
+t
+Ans:
+#include <stdio.h>
+int main() {
+    int a;
+    printf("Enter a number:");
+    scanf("%d",&a);
+    printf("Enter the number is:%d\n",a);
+    float b;
+    printf("Enter the value:");
+    scanf("%f",&b);
+    printf("Enter the number is:%f\n",b);
+    char name;
+    printf(" Enter a character:");
+    scanf(" %c",&name);
+    printf("Enter the character is: %c\n",name);
+    int d;
+    printf("Enter a number:");
+    scanf("%d",&d);
+    printf("Enter the number is:%d\n",d);
+    float f;
+    printf("Enter the value:");
+    scanf("%f",&f);
+    printf("Enter the number is:%f\n",f);
+    char n;
+    printf(" Enter a character:");
+    scanf(" %c",&n);
+    printf("Enter the character is: %c\n",n);
+    
+    return 0;
+}  
+
+Output:
+Enter a number:67
+Enter the number is:67
+Enter the value:-3.67
+Enter the number is:-3.670000
+ Enter a character:y
+Enter the character is: y
+Enter a number:-9
+Enter the number is:-9
+Enter the value:4.2
+Enter the number is:4.200000
+ Enter a character:t
+Enter the character is: t
+ 
+---------------------------------------------------------------------------------------------------------
+Ques:5 45+7 
+Ans:
+#include <stdio.h>
+int main() {
+    int a;
+    printf("Enter first number:");
+    scanf("%d",&a);
+    printf("The first number is:%d\n",a);
+    int b;
+    printf("Enter second number:");
+    scanf("%d",&b);
+    printf("The second number is:%d\n",b);
+    int c;
+    c=a+b;
+    printf("The sum of two numbers is:%d",c);
+    return 0;
+}
+
+Output:
+Enter first number:45
+The first number is:45
+Enter second number:7
+The second number is:7
+The sum of two numbers is:52
+----------------------------------------------------------------------------------------------------------
+Ques:6 234-55
+Ans:
+#include <stdio.h>
+int main() {
+    int a;
+    printf("Enter first number:");
+    scanf("%d",&a);
+    printf("The first number is:%d\n",a);
+    int b;
+    printf("Enter second number:");
+    scanf("%d",&b);
+    printf("The second number is:%d\n",b);
+    int c;
+    c=a-b;
+    printf("The subtraction of two numbers is:%d",c);
+    return 0;
+}
+
+Output:
+Enter first number:234
+The first number is:234
+Enter second number:55
+The second number is:55
+The subtraction of two numbers is:179
+-------------------------------------------------------------------------------------------------------------
+Ques:7 56*4
+Ans:#include <stdio.h>
+int main() {
+    int a;
+    printf("Enter first number:");
+    scanf("%d",&a);
+    printf("The first number is:%d\n",a);
+    int b;
+    printf("Enter second number:");
+    scanf("%d",&b);
+    printf("The second number is:%d\n",b);
+    int c;
+    c=a*b;
+    printf("The multiplication of two numbers is:%d",c);
+    return 0;
+}
+
+Output:
+Enter first number:56
+The first number is:56
+Enter second number:4
+The second number is:4
+The multiplication of two numbers is:224
+------------------------------------------------------------------------------------------------------------
+Ques:8 22/2
+Ans:
+#include <stdio.h>
+int main() {
+    int a;
+    printf("Enter first number:");
+    scanf("%d",&a);
+    printf("The first number is:%d\n",a);
+    int b;
+    printf("Enter second number:");
+    scanf("%d",&b);
+    printf("The second number is:%d\n",b);
+    int c;
+    c=a/b;
+    printf("The division of two numbers is:%d",c);
+    return 0;
+}
+
+Output:
+Enter first number:22
+The first number is:22
+Enter second number:2
+The second number is:2
+The division of two numbers is:11
+-------------------------------------------------------------------------------------------------------------
+Ques:9 45+67 without user input 
+Ans:
+#include <stdio.h>
+int main() {
+    int a=45;
+    int b=67;
+    int c;
+    c=a+b;
+    printf("The division of two numbers is:%d",c);
+    return 0;
+}
+
+Output:
+The division of two numbers is:112
+------------------------------------------------
+Ques:10 23-2 with user input 
+Ans:
+#include <stdio.h>
+int main() {
+    int a;
+    printf("Enter first number:");
+    scanf("%d",&a);
+    printf("The first number is:%d\n",a);
+    int b;
+    printf("Enter second number:");
+    scanf("%d",&b);
+    printf("The second number is:%d\n",b);
+    int c;
+    c=a-b;
+    printf("The subtraction of two numbers is:%d",c);
+    return 0;
+}
+
+Output:
+Enter first number:23
+The first number is:23
+Enter second number:2
+The second number is:2
+The subtraction of two numbers is:21
+
+------------------------------------------------------------------------------------------------------------
+Ques:11 34*5 with user input 
+Ans:
+#include <stdio.h>
+int main() {
+    int a;
+    printf("Enter first number:");
+    scanf("%d",&a);
+    printf("The first number is:%d\n",a);
+    int b;
+    printf("Enter second number:");
+    scanf("%d",&b);
+    printf("The second number is:%d\n",b);
+    int c;
+    c=a*b;
+    printf("The multiplication of two numbers is:%d",c);
+    return 0;
+}
+
+Output:
+Enter first number:34
+The first number is:34
+Enter second number:5
+The second number is:5
+The multiplication of two numbers is:170
+
+----------------------------------------------------------------------------------------------------------
+Ques:12 22/2without user input 
+Ans:
+#include <stdio.h>
+int main() {
+    int a=22;
+    int b=2;
+    int c;
+    c=a/b;
+    printf("The division of two numbers is:%d",c);
+    return 0;
+}
+
+Output:
+The division of two numbers is:11
+-------------------------------------------------------------------------------------------------------------
+Ques:13 34+67+23+12+6 with user input 
+Ans:
+#include <stdio.h>
+int main() {
+    int a;
+    printf("Enter first number:");
+    scanf("%d",&a);
+    printf("The first number is:%d\n",a);
+    int b;
+    printf("Enter second number:");
+    scanf("%d",&b);
+    printf("The second number is:%d\n",b);
+    int c;
+    printf("Enter third number:");
+    scanf("%d",&c);
+    printf("The third number is:%d\n",c);
+    int d;
+    printf("Enter fouth number:");
+    scanf("%d",&d);
+    printf("The fourth number is:%d\n",d);
+    int e;
+    printf("Enter fifth number:");
+    scanf("%d",&e);
+    printf("The fifth number is:%d\n",e);
+    int f;
+    f=a+b+c+d+e;
+    printf("The sum of all numbers is:%d",f);
+    return 0;
+}
+Output:
+Enter first number:34
+The first number is:34
+Enter second number:67
+The second number is:67
+Enter third number:23
+The third number is:23
+Enter fouth number:12
+The fourth number is:12
+Enter fifth number:6
+The fifth number is:6
+The sum of all numbers is:142
+
+----------------------------------------------------------------------------------------------------------
+Ques:14 23+89+12+56 without user input 
+Ans:
+#include <stdio.h>
+int main() {
+    int b=23;
+    printf("The first number is:%d\n",b);
+    int c=89;
+    printf("The second number is:%d\n",c);
+    int d=12;
+    printf("The third number is:%d\n",d);
+    int e=56;
+    printf("The fourth number is:%d\n",e);
+    int g;
+    g=b+c+d+e;
+    printf("The solution  of all numbers is:%d",g);
+    return 0;
+}
+Output:
+The first number is:23
+The second number is:89
+The third number is:12
+The fourth number is:56
+The solution  of all numbers is:180
+-------------------------------------------------------------------------------------------------------
+Ques:15 56*34+12/2-13 with user input 
+#include <stdio.h>
+int main() {
+    int a;
+    printf("Enter first number:");
+    scanf("%d",&a);
+    printf("The first number is:%d\n",a);
+    int b;
+    printf("Enter second number:");
+    scanf("%d",&b);
+    printf("The second number is:%d\n",b);
+    int c;
+    printf("Enter third number:");
+    scanf("%d",&c);
+    printf("The third number is:%d\n",c);
+    int d;
+    printf("Enter fouth number:");
+    scanf("%d",&d);
+    printf("The fourth number is:%d\n",d);
+    int e;
+    printf("Enter fifth number:");
+    scanf("%d",&e);
+    printf("The fifth number is:%d\n",e);
+    int f;
+    f=a*b+c/d-e;
+    printf("The sum of all numbers is:%d",f);
+    return 0;
+}
+
+Output:
+Enter first number:56
+The first number is:56
+Enter second number:34
+The second number is:34
+Enter third number:12
+The third number is:12
+Enter fouth number:2
+The fourth number is:2
+Enter fifth number:13
+The fifth number is:13
+The sum of all numbers is:1897
+
+-----------------------------------------------------
+Ques:16 1.2*6.7-4.5/2 without user input 
+Ans:
+#include <stdio.h>
+int main() {
+    float b=1.2;
+    printf("The first number is:%f\n",b);
+    float c=6.7;
+    printf("The second number is:%f\n",c);
+    float d=4.5;
+    printf("The third number is:%f\n",d);
+    int e=2;
+    printf("The fourth number is:%d\n",e);
+    float g;
+    //1.2*6.7-4.5/2
+    g=b*c-d/e;
+    printf("The solution  of all numbers is:%f",g);
+    return 0;
+}
+Output:
+The first number is:1.200000
+The second number is:6.700000
+The third number is:4.500000
+The fourth number is:2
+The solution  of all numbers is:5.790000
+------------------------------------------------------------------------------------------------------------
+Ques:17 1.6*(12-2)/2+7.8-1.5  with user input 
+Ans:
+#include <stdio.h>
+int main() {
+    float a;
+    printf("Enter first number:");
+    scanf("%f",&a);
+    printf("The first number is:%f\n",a);
+    int b;
+    printf("Enter second number:");
+    scanf("%d",&b);
+    printf("The second number is:%d\n",b);
+    int c;
+    printf("Enter third number:");
+    scanf("%d",&c);
+    printf("The third number is:%d\n",c);
+    int d;
+    printf("Enter fouth number:");
+    scanf("%d",&d);
+    printf("The fourth number is:%d\n",d);
+    float e;
+    printf("Enter fifth number:");
+    scanf("%f",&e);
+    printf("The fifth number is:%f\n",e);
+    float f;
+    printf("Enter sixth number:");
+    scanf("%f",&f);
+    printf("The sixth number is:%f\n",f);
+    float g;
+    g=a*(b-c)/d+e-f;
+    printf("The solution  of all numbers is:%f",g);
+    return 0;
+}
+
+Output:
+Enter first number:1.6
+The first number is:1.600000
+Enter second number:12
+The second number is:12
+Enter third number:2
+The third number is:2
+Enter fouth number:2
+The fourth number is:2
+Enter fifth number:7.8
+The fifth number is:1693936576
+Enter sixth number:1.5
+The sixth number is:1.500000
+The solution  of all numbers is:14.300000
+---------------------------------------------------------------------------------------------------------
+Ques:18 4.5*1.2-(82/2)-5.6 +1.234 with user input 
+Ans:
+#include <stdio.h>
+int main() {
+    float a;
+    printf("Enter first number:");
+    scanf("%f",&a);
+    printf("The first number is:%f\n",a);
+    float b;
+    printf("Enter second number:");
+    scanf("%f",&b);
+    printf("The second number is:%f\n",b);
+    int c;
+    printf("Enter third number:");
+    scanf("%d",&c);
+    printf("The third number is:%d\n",c);
+    int d;
+    printf("Enter fourth number:");
+    scanf("%d",&d);
+    printf("The fourth number is:%d\n",d);
+    float e;
+    printf("Enter fifth number:");
+    scanf("%f",&e);
+    printf("The fifth number is:%d\n",e);
+    float f;
+    printf("Enter sixth number:");
+    scanf("%f",&f);
+    printf("The sixth number is:%f\n",f);
+    float g;
+    //4.5*1.2-(82/2)-5.6 +1.234
+    g=a*b-(c/d)-e+f;
+    printf("The solution  of all numbers is:%f",g);
+    return 0;
+}
+
+Output:
+Enter first number:4.5
+The first number is:4.500000
+Enter second number:1.2
+The second number is:1.200000
+Enter third number:82
+The third number is:82
+Enter fourth number:2
+The fourth number is:2
+Enter fifth number:5.6
+The fifth number is:-1690111568
+Enter sixth number:1.234
+The sixth number is:1.234000
+The solution  of all numbers is:-39.965996
+-------------------------------------------------------------------------------------------------------------
+Ques:19 8*1+(4-2)/1+6 without user input 
+Ans:
+#include <stdio.h>
+int main() {
+    int a=8;
+    printf("The first number is:%d\n",a);
+    int b=1;
+    printf("The second number is:%d\n",b);
+    int c=4;
+    printf("The third number is:%d\n",c);
+    int d=2;
+    printf("The fourth number is:%d\n",d);
+    int e=1;
+    printf("The fifth number is:%d\n",e);
+    int f=6;
+    printf("The sixth number is:%d\n",f);
+    int g;
+    //8*1+(4-2)/1+6
+    g=a*b+(c-d)/e+f;
+    printf("The solution  of all numbers is:%d",g);
+    return 0;
+}
+
+Output:
+The first number is:8
+The second number is:1
+The third number is:4
+The fourth number is:2
+The fifth number is:1
+The sixth number is:6
+The solution  of all numbers is:16
+-------------------------------------------------------------------------------------------------------------
+Ques:20 3.4+1.2*(3.7-1.2)/2+6.8 with user input 
+Ans:
+#include <stdio.h>
+int main() {
+    float a;
+    printf("Enter first number:");
+    scanf("%f",&a);
+    printf("The first number is:%f\n",a);
+    float b;
+    printf("Enter second number:");
+    scanf("%f",&b);
+    printf("The second number is:%f\n",b);
+    float c;
+    printf("Enter third number:");
+    scanf("%f",&c);
+    printf("The third number is:%f\n",c);
+    float d;
+    printf("Enter fourth number:");
+    scanf("%f",&d);
+    printf("The fourth number is:%f\n",d);
+    int e;
+    printf("Enter fifth number:");
+    scanf("%d",&e);
+    printf("The fifth number is:%d\n",e);
+    float f;
+    printf("Enter sixth number:");
+    scanf("%f",&f);
+    printf("The sixth number is:%f\n",f);
+    float g;
+    g=a+b*(c-d)/e+f;
+    printf("The solution  of all numbers is:%f",g);
+    return 0;
+}
+Output:
+Enter first number:3.4
+The first number is:3.400000
+Enter second number:1.2
+The second number is:1.200000
+Enter third number:3.7
+The third number is:3.700000
+Enter fourth number:1.2
+The fourth number is:1.200000
+Enter fifth number:2
+The fifth number is:2
+Enter sixth number:6.8
+The sixth number is:6.800000
+The solution  of all numbers is:11.700001
+
+------------------------------------------------------------------------------------------------------------
+Ques:21 8.9*1.67-(6.21-5.6)+7.8-34 +157without user input 
+Ans:
+#include <stdio.h>
+int main() {
+    float a=8.9;
+    printf("The first number is:%f\n",a);
+    float b=1.67;
+    printf("The second number is:%f\n",b);
+    float c=6.21;
+    printf("The third number is:%f\n",c);
+    float d=5.6;
+    printf("The fourth number is:%f\n",d);
+    float e=7.8;
+    printf("The fifth number is:%f\n",e);
+    int h=34;
+    printf("The sixth number is:%d\n",h);
+    int i=157;
+    printf("The seventh number is:%d\n",i);
+    float g;
+    //8.9*1.67-(6.21-5.6)+7.8-34 +157
+    g=a*b-(c-d)+e-h+i;
+    printf("The solution  of all numbers is:%f",g);
+    return 0;
+}
+Output:
+The first number is:8.900000
+The second number is:1.670000
+The third number is:6.210000
+The fourth number is:5.600000
+The fifth number is:7.800000
+The sixth number is:34
+The seventh number is:157
+The solution  of all numbers is:145.052994
+--------------------------------------------------------------------------------------------------------------
