@@ -1,0 +1,89 @@
+13) Write a C program to find sum of first and last digit of a number
+Ans:
+#include <stdio.h>
+int main()
+{
+    int num, sum=0, firstDigit, lastDigit;
+    printf("Enter any number to find sum of first and last digit: ");
+    scanf("%d", &num);
+    lastDigit = num % 10;
+    firstDigit = num;
+    while(num >= 10)
+    {
+        num = num / 10;
+    }
+    firstDigit = num;
+    sum = firstDigit + lastDigit; 
+    printf("Sum of first and last digit = %d", sum);
+    return 0;
+}
+Output:
+Enter any number to find sum of first and last digit: 123654
+Sum of first and last digit = 5
+---------------------------------------------------------------------------------------------------------------
+14) Write a C program to swap first and last digits of a number.
+Ans:
+---------------------------------------------------------------------------------------------------------------
+15) Write a C program to calculate sum of digits of a number.
+Ans:
+#include<stdio.h>
+int main(){
+    int num,sum=0;
+    printf("Enter the value of num:");
+    scanf("%d",&num);
+    for(int i=0;i<=num;i++){
+        sum=sum+i;
+    }
+    printf("The value of sum is:%d",sum);
+    return 0;
+}
+Output:
+Enter the value of num:5
+The value of sum is:15
+---------------------------------------------------------------------------------------------------------------
+16) Write a C program to calculate product of digits of a number.
+Ans:
+#include<stdio.h>
+int main(){
+    int num,mul=1;
+    printf("Enter the value of num:");
+    scanf("%d",&num);
+    for(int i=1;i<=num;i++){
+        mul=mul*i;
+    }
+    printf("The value of multiplication is:%d",mul);
+    return 0;
+}
+Output:
+Enter the value of num:6
+The value of multiplication is:720
+---------------------------------------------------------------------------------------------------------------
+17) Write a C program to check whether a number is Prime number or not.
+Ans:
+#include <stdio.h>
+int main()
+{
+    int i, num, isPrime=1;
+    printf("Enter any number to check prime: ");
+    scanf("%d", &num);
+    for(i=2; i<=num/2; i++)
+    {
+        if(num%i==0)
+        {
+            isPrime = 0;
+            break;
+        }
+    }
+    if(isPrime == 1 && num > 1)
+    {
+        printf("%d is prime number", num);
+    }
+    else
+    {
+        printf("%d is not a prime number", num);
+    }
+    return 0;
+}
+Output:
+Enter any number to check prime: 65
+65 is not a prime number
