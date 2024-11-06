@@ -1,0 +1,613 @@
+Ques:1) Write a C program to perform input/output of all basic data types
+Ans:
+#include<stdio.h>
+int main(){
+    int num;
+    float number;
+    char alpha;
+    printf("Enter the value of num:");
+    scanf("%d",&num);
+    printf("Enter the floating value of number:");
+    scanf("%f",&number);
+    printf("Enter the character:");
+    scanf(" %c",&alpha);
+    printf("The int data type value is %d",num);
+    printf("and the float data type value is %f",number);
+    printf("and the charcter data type value is %c",alpha);
+    return 0;
+}
+Output:
+Enter the value of num:45
+Enter the floating value of number:2.36
+Enter the character:c
+The int data type value is 45and the float data type value is 2.360000and the charcter data type value is c
+------------------------------------------------------------------------------------------------------
+Ques:2 Write a C program to enter two numbers and find their sum.
+Ans:
+#include <stdio.h>
+int main() {
+    int a,b,c;
+    printf("Enter first number:");
+    scanf("%d",&a);
+    printf("Enter second number:");
+    scanf("%d",&b);
+    c=a+b;
+    printf("The sum of two numbers is:%d",c);
+    
+    return 0;
+}
+
+Output:
+Enter first number:98
+Enter second number:78
+The sum of two numbers is:176
+--------------------------------------------------------------------------------------------------------------
+3)Write a C program to enter two numbers and perform all arithmetic operations.
+Ans:
+#include <stdio.h>
+int main() {
+    int a,b,c;
+    printf("Enter first number:");
+    
+    scanf("%d",&a);
+    printf("Enter second number:");
+    scanf("%d",&b);
+    c=a+b;
+    printf("The sum of two numbers is:%d\n",c);
+    c=a-b;
+    printf("The subtraction of two numbers is:%d\n",c);
+    c=a*b;
+    printf("The multiplication of two numbers is:%d\n",c);
+    c=a/b;
+    printf("The division of two numbers is:%d\n",c);
+    c=a%b;
+    printf("The modulus of two numbers is:%d",c);
+    
+    return 0;
+}
+
+Output:
+Enter first number:10
+Enter second number:2
+The sum of two numbers is:12
+The subtraction of two numbers is:8
+The multiplication of two numbers is:20
+The division of two numbers is:5
+The modulus of two numbers is:0
+--------------------------------------------------------------------------------------------------------
+4) Write a C program to enter length and breadth of a rectangle and find its perimeter
+Ans:
+#include <stdio.h>
+int main() {
+    int l,b,perimeter;
+    printf("Enter length of rectangle:");
+    scanf("%d",&l);
+    printf("Enter breadth of rectangle:");
+    scanf("%d",&b);
+    perimeter=2*(l+b);
+    printf("The perimeter of rectangle is:%d",perimeter);
+    return 0;
+}
+
+Output:
+Enter length of rectangle:15
+Enter breadth of rectangle:10
+The perimeter of rectangle is:50
+
+--------------------------------------------------------------------------------------------------------
+5) Write a C program to enter length and breadth of a rectangle and find its area.
+Ans:
+#include <stdio.h>
+int main() {
+    int l,b,area;
+    printf("Enter length of rectangle:");
+    scanf("%d",&l);
+    printf("Enter breadth of rectangle:");
+    scanf("%d",&b);
+    area=l*b;
+    printf("The area of rectangle is:%d",area);
+    return 0;
+}
+
+Output:
+Enter length of rectangle:10
+Enter breadth of rectangle:12
+The area of rectangle is:120
+
+----------------------------------------------------------------------------------------------------------
+6) Write a C program to enter radius of a circle and find its diameter, circumference and area.
+Ans:
+#include<stdio.h>
+int main() {
+    float r,diameter,circum,area;
+    printf("Enter radius of circle:");
+    scanf("%f",&r);
+    diameter=2*r;
+    printf("The diameter of circle is:%f\n",diameter);
+    circum=2*3.14*r;
+    printf("The circumference of circle is:%f\n",circum);
+    area=3.14*r*r;
+    printf("The area of circle is:%f",area);
+    return 0;
+}
+
+Output:
+Enter radius of circle:7
+The diameter of circle is:14.000000
+The circumference of circle is:43.959999
+The area of circle is:153.860001
+
+-----------------------------------------------------------------------------------------------------------
+7) Write a C program to enter length in centimeter and convert it into meter and kilometer.
+Ans:
+#include <stdio.h>
+int main() {
+    int length;
+    float meter,km;
+    printf("Enter the length:");
+    scanf("%d",&length);
+    meter=length/100;
+    printf("%f\n",meter);
+    km=length/100000;
+    printf("%f\n",km);
+    return 0;
+}
+
+Output:
+Enter the length:200000
+2000.000000
+2.000000
+
+------------------------------------------------------------------------------------------------------------
+8) Write a C program to find power of any number x ^ y.
+Ans:
+#include <stdio.h>
+int main() {
+    int x,power;
+    printf("Enter the value of x:");
+    scanf("%d",&x);
+    power=x*x;
+    printf("%d",power);
+    return 0;
+}
+
+Output:
+Enter the value of x:25
+625
+
+---------------------------------------------------------------------------------------------------------------
+9) Write a C program to enter two angles of a triangle and find the third angle.
+Ans:
+#include<stdio.h>
+int main(){
+    int a,b,c;
+    printf("Enter the two angles of triangle:");
+    scanf("%d%d",&a,&b);
+    c=180-(a+b);
+    printf("The third angle of a triangle is:%d",c);
+    return 0;
+}
+Output:
+Enter the two angles of triangle:60
+30
+The third angle of a triangle is:90
+
+--------------------------------------------------------------------------------------------------------------
+10) Write a C program to enter marks of five subjects and calculate total, average and percentage.
+Ans:
+#include<stdio.h>
+int main(){
+    int total=0;
+    int marks;
+    float avg,per;
+    for(int i=1;i<=5;i++){
+        printf("Enter the student marks:");
+        scanf("%d",&marks);
+        total=total+marks;
+    }
+    printf("%d",total);
+    avg=total/5;
+    per=total/5.0;
+    printf("The average marks are:%f",avg);
+    printf("and the percentage is:%f",per);
+    return 0;
+}
+Output:
+Enter the student marks:98
+Enter the student marks:96
+Enter the student marks:95
+Enter the student marks:97
+Enter the student marks:99
+485
+The average marks are:97.000000and the percentage is:97.000000
+
+--------------------------------------------------------------------------------------------------------------
+11) Write a C program to find sum of all even numbers between 1 to n
+Ans:
+#include<stdio.h>
+int main(){
+    int num,sum=0;
+    printf("Enter the value of num:");
+    scanf("%d",&num);
+    for(int i=1;i<=num;i++){
+        if(i%2==0){
+            sum=sum+i;
+        }
+    }
+    printf("The sum of even numbers is:%d",sum);
+    return 0;
+}
+Output:
+Enter the value of num:15
+The sum of even numbers is:56
+
+--------------------------------------------------------------------------------------------------------------
+12) Write a C program to count number of digits in a number.
+Ans:
+#include<stdio.h>
+int main(){
+    int num;
+    int count=0;
+    printf("Enter the value of num:");
+    scanf("%d",&num);
+    while(num>0){
+        count++;
+        num=num/10;
+    }
+    printf("%d",count);
+    return 0;
+}
+Output:
+Enter the value of num:8965412
+7
+---------------------------------------------------------------------------------------------------------------
+13) Write a C program to find sum of first and last digit of a number
+Ans:
+#include <stdio.h>
+int main()
+{
+    int num, sum=0, firstDigit, lastDigit;
+    printf("Enter any number to find sum of first and last digit: ");
+    scanf("%d", &num);
+    lastDigit = num % 10;
+    firstDigit = num;
+    while(num >= 10)
+    {
+        num = num / 10;
+    }
+    firstDigit = num;
+    sum = firstDigit + lastDigit; 
+    printf("Sum of first and last digit = %d", sum);
+    return 0;
+}
+Output:
+Enter any number to find sum of first and last digit: 123654
+Sum of first and last digit = 5
+---------------------------------------------------------------------------------------------------------------
+14) Write a C program to swap first and last digits of a number.
+Ans:
+---------------------------------------------------------------------------------------------------------------
+15) Write a C program to calculate sum of digits of a number.
+Ans:
+#include<stdio.h>
+int main(){
+    int num,sum=0;
+    printf("Enter the value of num:");
+    scanf("%d",&num);
+    for(int i=0;i<=num;i++){
+        sum=sum+i;
+    }
+    printf("The value of sum is:%d",sum);
+    return 0;
+}
+Output:
+Enter the value of num:5
+The value of sum is:15
+---------------------------------------------------------------------------------------------------------------
+16) Write a C program to calculate product of digits of a number.
+Ans:
+#include<stdio.h>
+int main(){
+    int num,mul=1;
+    printf("Enter the value of num:");
+    scanf("%d",&num);
+    for(int i=1;i<=num;i++){
+        mul=mul*i;
+    }
+    printf("The value of multiplication is:%d",mul);
+    return 0;
+}
+Output:
+Enter the value of num:6
+The value of multiplication is:720
+---------------------------------------------------------------------------------------------------------------
+17) Write a C program to check whether a number is Prime number or not.
+Ans:
+#include <stdio.h>
+int main()
+{
+    int i, num, isPrime=1;
+    printf("Enter any number to check prime: ");
+    scanf("%d", &num);
+    for(i=2; i<=num/2; i++)
+    {
+        if(num%i==0)
+        {
+            isPrime = 0;
+            break;
+        }
+    }
+    if(isPrime == 1 && num > 1)
+    {
+        printf("%d is prime number", num);
+    }
+    else
+    {
+        printf("%d is not a prime number", num);
+    }
+    return 0;
+}
+Output:
+Enter any number to check prime: 65
+65 is not a prime number
+---------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------
+19) Write a C program to print all Palindrome numbers between 1 to n.
+Ans:
+#include<stdio.h>
+int main(){
+   int num,rem,sum,temp,start,end;
+   printf("Enter the lower limit: ");
+   scanf("%d",&start);
+   printf("Enter the upper limit: ");
+   scanf("%d",&end);
+   printf("Palindrome numbers between %d and %d are:\n",start,end);
+   for(num=start;num<=end;num++){
+      temp=num;
+      sum=0;
+      while(temp){
+         rem=temp%10;
+         temp=temp/10;
+         sum=sum*10+rem;
+      }
+      if(num==sum)
+         printf("%d ",num);
+   }
+   return 0;
+}
+Output:
+Enter the lower limit: 1
+Enter the upper limit: 200
+Palindrome numbers between 1 and 200 are:
+1 2 3 4 5 6 7 8 9 11 22 33 44 55 66 77 88 99 101 111 121 131 141 151 161 171 181 191
+---------------------------------------------------------------------------------------------------------------
+20) Write a C program to check whether a number is Perfect number or not.
+Ans:
+#include <stdio.h>
+int main()
+{
+    int i, num, sum = 0;
+    printf("Enter any number to check perfect number:");
+    scanf("%d", &num);
+    for(i=1;i<=num/2;i++)
+    {
+        if(num%i==0)
+        {
+            sum += i;
+        }
+    }
+    if(sum == num && num > 0)
+    {
+        printf("%d is PERFECT NUMBER", num);
+    }
+    else
+    {
+        printf("%d is NOT PERFECT NUMBER", num);
+    }
+    return 0;
+}
+Output:
+Enter any number to check perfect number:6
+6 is PERFECT NUMBER
+---------------------------------------------------------------------------------------------------------------
+21) Write a C program that accepts two item’s weight (floating points' values ) and number of purchase (floating points' values) and calculate the average value of the items.  
+Test Data :
+Weight - Item1: 15
+No. of item1: 5
+Weight - Item2: 25
+No. of item2: 4
+Expected Output:
+Average Value = 19.444444
+Ans:
+#include <stdio.h>
+int main() 
+{
+    float wi1, ci1, wi2, ci2, result; 
+    printf("Weight - Item1: ");
+    scanf("%f", &wi1);
+    printf("No. of item1: ");
+    scanf("%f", &ci1);
+    printf("Weight - Item2: ");
+    scanf("%f", &wi2);
+    printf("No. of item2: ");
+    scanf("%f", &ci2);
+    result = ((wi1 * ci1) + (wi2 * ci2)) / (ci1 + ci2);
+    printf("Average Value = %f\n", result);
+    return 0;
+}
+---------------------------------------------------------------------------------------------------------------
+22) Write a C program that accepts an employee's ID, total worked hours of a month and the amount he received per hour. Print the employee's ID and salary (with two decimal places) of a particular month.  
+Test Data :
+Input the Employees ID(Max. 10 chars): 0342
+Input the working hrs: 8
+Salary amount/hr: 15000
+Expected Output:
+Employees ID = 0342
+Salary = U$ 120000.00
+Ans:
+#include <stdio.h>
+int main() {
+    char id[10];
+    int hour;
+    float value, salary;
+    printf("Input the Employees ID(Max. 10 chars): ");
+    scanf("%s", &id);
+    printf("Input the working hrs: ");
+    scanf("%d", &hour);
+    printf("Salary amount/hr: ");
+    scanf("%f", &value);
+    salary = value * hour;
+    printf("Employees ID = %s\nSalary = U$ %.2f\n", id, salary);
+    return 0;
+}
+---------------------------------------------------------------------------------------------------------------
+24) Write a C program that accepts three integers and find the maximum of three.   
+Test Data :
+Input the first integer: 25
+Input the second integer: 35
+Input the third integer: 15
+Expected Output:
+Maximum value of three integers: 35
+Ans:
+#include <stdio.h>
+int main()
+{
+    int x, y, z, result, max;
+    printf("Input the first integer: "); 
+    scanf("%d", &x);
+    printf("Input the second integer: ");
+    scanf("%d", &y);
+    printf("Input the third integer: ");
+    scanf("%d", &z);
+    if(x>y && x>z){
+        printf("Maximum value of three integers: %d", x);
+    }
+    else if(y>x && y>z){
+        printf("Maximum value of three integers: %d", y);
+    }
+    else{
+        printf("Maximum value of three integers: %d", z);
+    }
+    return 0;
+}
+---------------------------------------------------------------------------------------------------------------
+25) Write a C program to calculate a bike’s average consumption from the given total distance (integer value) traveled (in km) and spent fuel (in liters, float number – 2 decimal point).   
+Test Data :
+Input total distance in km: 350
+Input total fuel spent in liters: 5
+Expected Output:
+Average consumption (km/lt) 70.000
+Ans:
+#include <stdio.h>
+int main() 
+{
+    int x;
+    float y;
+    printf("Input total distance in km: ");
+    scanf("%d",&x);
+    printf("Input total fuel spent in liters: ");
+    scanf("%f", &y);
+    printf("Average consumption (km/lt) %.3f ",x/y);
+    return 0;
+}
+---------------------------------------------------------------------------------------------------------------
+26) Write a C program that accepts 4 integers p, q, r, s from the user where q, r and s are positive and p is even. If q is greater than r and s is greater than p and if the sum of r and s is greater than the sum of p and q print "Correct values", otherwise print "Wrong values".   
+Test Data :
+Input the second integer: 35
+Input the third integer: 15
+Input the fourth integer: 46
+Expected Output:
+Wrong values
+Ans:
+#include <stdio.h>
+int main() {
+    int p, q, r, s;
+    printf("Input the first integer: "); 
+    scanf("%d", &p);
+    printf("Input the second integer: ");
+    scanf("%d", &q);
+    printf("Input the third integer: ");
+    scanf("%d", &r);
+    printf("Input the fourth integer: ");
+    scanf("%d", &s);
+    if((q > r) && (s > p) && ((r+s) > (p+q)) && (r > 0) && (s > 0) && (p%2 == 0))
+    {
+        printf("Correct values\n");
+    } 
+    else {
+        printf("Wrong values\n");
+    }
+    return 0;
+}
+---------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------
+28) Write a C program that reads three floating values and check if it is possible to make a triangle with them. Also calculate the perimeter of the triangle if the said values are valid.   
+Test Data :
+Input the first number: 25
+Input the second number: 15
+Input the third number: 35
+Expected Output:
+Perimeter = 75.0
+Ans:
+#include <stdio.h>
+int main() {
+    float  x, y, z, P, A; 
+    printf("Input the first number: "); 
+    scanf("%f", &x);
+    printf("Input the second number: ");
+    scanf("%f", &y);
+    printf("Input the third number: ");
+    scanf("%f", &z);
+    if(x < (y+z) && y < (x+z) && z < (y+x))
+     {  
+        P = x+y+z;
+        printf("Perimeter=%f\n", P); 
+    }
+    else
+    {
+        printf("Not possible to create a triangle..!");
+    }
+    return 0;
+}
+Output:
+Input the first number: 25
+Input the second number: 15
+Input the third number: 35
+Perimeter=75.000000
+---------------------------------------------------------------------------------------------------------------
+30) Write a C program that reads two integers and checks whether they are multiplied or not.   
+Test Data :
+Input the first number: 5
+Input the second number: 15
+Expected Output:
+Multiplied!
+Ans:
+#include <stdio.h>
+int main() {
+    int  x, y;
+    printf("Input the first number: "); 
+    scanf("%d", &x);
+    printf("Input the second number: ");
+    scanf("%d", &y);
+    if(x > y) 
+    {
+        int temp;
+        temp = x;
+        x = y;
+        y = temp;
+    }
+    if((y % x)== 0)
+    {
+        printf("Multiplied!\n");
+    } 
+    else 
+    {
+        printf("Not Multiplied!\n");
+    }
+    return 0;
+}
+Output:
+Input the first number: 5
+Input the second number: 15
+Multiplied!
+---------------------------------------------------------------------------------------------------------------
